@@ -44,7 +44,7 @@ namespace ProgrammaticControlPanel
 
                     raw_dgw.AutoGenerateColumns = true;
 
-                    raw_dgw.DataSource = rawData;
+                    raw_dgw.DataSource =new SortableBindingList<RawData>( rawData);
                     foreach (DataGridViewColumn column in raw_dgw.Columns)
                     {
                         column.SortMode = DataGridViewColumnSortMode.Automatic;
@@ -66,7 +66,7 @@ namespace ProgrammaticControlPanel
                             ,
                             AK = g.Sum(x => (x.Status == "Не проведено" ? 0 : double.Parse(x.AK)))
                         }).ToList();
-                    calculatedData_dgw.DataSource = data;
+                    calculatedData_dgw.DataSource =new SortableBindingList<Data>(data);
                     foreach (DataGridViewColumn column in calculatedData_dgw.Columns)
                     {
                         column.SortMode = DataGridViewColumnSortMode.Automatic;
