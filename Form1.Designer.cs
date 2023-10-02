@@ -36,30 +36,31 @@
             // 
             // tabControl1
             // 
+            tabControl1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             tabControl1.Controls.Add(zp_tp);
             tabControl1.Controls.Add(tabPage2);
-            tabControl1.Location = new Point(13, 6);
+            tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1546, 782);
+            tabControl1.Size = new Size(1709, 800);
             tabControl1.TabIndex = 0;
             // 
             // zp_tp
             // 
+            zp_tp.BackColor = Color.Gray;
             zp_tp.Location = new Point(4, 29);
             zp_tp.Name = "zp_tp";
             zp_tp.Padding = new Padding(3);
-            zp_tp.Size = new Size(1538, 749);
+            zp_tp.Size = new Size(1701, 767);
             zp_tp.TabIndex = 0;
             zp_tp.Text = "ЗП";
-            zp_tp.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
             tabPage2.Location = new Point(4, 29);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(242, 92);
+            tabPage2.Size = new Size(1701, 767);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "tabPage2";
             tabPage2.UseVisualStyleBackColor = true;
