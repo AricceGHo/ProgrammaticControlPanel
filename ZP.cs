@@ -31,6 +31,7 @@ namespace ProgrammaticControlPanel
 
         private void load_btn_Click(object sender, EventArgs e)
         {
+            openFileDialog1.Filter = "CSV files(*.csv)|*.csv";
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 try
